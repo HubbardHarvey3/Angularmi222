@@ -1,0 +1,33 @@
+/* Main container styling */
+#mainDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 1em;
+}
+
+/* subcontainer styling H4 and P tags */
+.SoFtextsub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: .7em;
+}
+
+.SoFtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+hr {
+  margin: .1em 0;
+  border: 0;
+  text-align: center;
+
+}
+
+hr:before {
+  content: "\2022 \2022 \2022";
+  font-size: 50px;
+  color: #87ceeb;
+}

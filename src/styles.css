@@ -8,6 +8,9 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  /* just for late night dev */
+  background-color: black;
+  color: #ffffff;
 
 }
 

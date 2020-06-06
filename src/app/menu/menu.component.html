@@ -1,0 +1,34 @@
+<mat-toolbar>
+  <mat-toolbar-row>
+    <span>
+
+      <button mat-raised-button [matMenuTriggerFor]='menu'>Menu</button>
+      <div id="menuDiv">
+
+        <mat-menu #menu="matMenu" xPosition="before">
+          <mat-list style="width: 100%;">
+            <mat-list-item style="width: 100%;">
+              <button mat-flat-button routerLink="/home">Home</button>
+            </mat-list-item>
+            <mat-list-item>
+              <button mat-flat-button routerLink="/news">News</button>
+            </mat-list-item>
+            <mat-list-item>
+              <button mat-flat-button routerLink="/about">About</button>
+            </mat-list-item>
+            <mat-list-item>
+              <button mat-flat-button routerLink="/statement-faith">Statement of Faith</button>
+            </mat-list-item>
+            <mat-list-item>
+              <button mat-flat-button routerLink="/donate">Donate</button>
+            </mat-list-item>
+          </mat-list>
+        </mat-menu>
+      </div>
+    </span>
+    <span class="spacer"></span>
+    <img src="../assets/222CommissionEspSmall.png" alt="">
+  </mat-toolbar-row>
+
+</mat-toolbar>
+<router-outlet></router-outlet>

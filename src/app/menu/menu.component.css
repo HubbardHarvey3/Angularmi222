@@ -1,0 +1,24 @@
+/* Styles for the toolbar */
+mat-toolbar {
+  background-color: rgb(135, 206, 235);
+}
+
+mat-toolbar-row {
+  height: 7em;
+}
+
+img {
+  width: auto;
+  height: 60%;
+}
+
+/* Spaces out the two elements, the image and the menu button */
+.spacer {
+  width: 100%;
+}
+
+/* Styles for the menu buttons and submenu */
+button {
+  font-size: 1.2em;
+  padding: .5em;
+}

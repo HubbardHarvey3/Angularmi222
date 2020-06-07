@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 //Angular Material
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -8,7 +9,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
-
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -33,13 +36,17 @@ import { DonateComponent } from './donate/donate.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
+    MatFormFieldModule,
     MatMenuModule,
     MatCardModule,
     MatButtonModule,
     MatListModule,
+    MatInputModule,
+    FormsModule,
     MatDividerModule
   ],
   providers: [],

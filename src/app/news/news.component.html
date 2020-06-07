@@ -1,2 +1,37 @@
 <app-menu></app-menu>
-<p>news works!</p>
+<mat-card>
+  <mat-card-title>Our Latest Prayer Letters</mat-card-title>
+  <mat-card-content>(Prayer Letter PDF Link here)</mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-title>Pictures from the field</mat-card-title>
+  <mat-card-content>(Pictures here of the ministry)</mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-title>Do you what to get involved</mat-card-title>
+  <mat-card-subtitle>Planning a mission trip?</mat-card-subtitle>
+  <mat-card-content>(Info on how to plan a trip here)</mat-card-content>
+  <mat-card-subtitle>Or you can support us financially</mat-card-subtitle>
+  <mat-card-content><button mat-raised-button routerLink="/donate">Donate</button></mat-card-content>
+</mat-card>
+
+<mat-card>
+  <mat-card-title>Latest Blog!</mat-card-title>
+  <div class="inputDiv">
+    <mat-form-field>
+      <mat-label>Blog Title</mat-label>
+      <input [(ngModel)]="blogTitle" matInput>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Content</mat-label>
+      <textarea [(ngModel)]="blogContent" name="" id="" cols="30" rows="10" matInput></textarea>
+    </mat-form-field>
+    <button mat-raised-button color='primary' (click)="submitBlogEntry()">Submit</button>
+  </div>
+</mat-card>
+<div *ngFor="let item of blogs">
+  <mat-card>
+    <mat-card-title>{{item.blogTitle}}</mat-card-title>
+    <mat-card-content>{{item.blogContent}}</mat-card-content>
+  </mat-card>
+</div>

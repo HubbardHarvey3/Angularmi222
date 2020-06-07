@@ -1,0 +1,7 @@
+.inputDiv {
+  flex-direction: column;
+}
+
+button {
+  width: 40%;
+}

@@ -9,12 +9,25 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   /* just for late night dev */
-  background-color: black;
-  color: #ffffff;
+  /* background-color: black;
+  color: #ffffff; */
 
 }
 
 div {
   display: flex;
+}
 
+/* Global Component Styles */
+.pageTitle {
+  font-size: 2em;
+  line-height: 1.3em;
+}
+
+mat-card {
+  margin: .5em;
+}
+
+mat-card-title {
+  padding: .3em;
 }

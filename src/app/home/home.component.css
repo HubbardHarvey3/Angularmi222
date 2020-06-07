@@ -1,0 +1,52 @@
+div {
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-weight: bold;
+  margin: 1em;
+  font-size: 3.2em;
+  line-height: 1.1em;
+}
+
+/* sytles for the Picture and Text */
+#jumbotron {
+  flex-direction: row;
+  margin: 1em;
+  align-items: center;
+}
+
+#verse {
+  font-size: 2em;
+  line-height: 1.1em;
+  padding: 1em;
+
+  font-style: italic;
+}
+
+img {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width:800px) {
+  #verse {
+    font-size: 1.1em;
+    line-height: 1.4em;
+  }
+
+  h1 {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  #jumbotron {
+    flex-direction: column;
+  }
+}

@@ -6,6 +6,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -35,8 +37,10 @@ import { DonateComponent } from './donate/donate.component';
     AppRoutingModule,
     MatToolbarModule,
     MatMenuModule,
+    MatCardModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

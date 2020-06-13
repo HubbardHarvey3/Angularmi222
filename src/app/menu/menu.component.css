@@ -1,10 +1,18 @@
 /* Styles for the toolbar */
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 mat-toolbar {
   background-color: rgb(135, 206, 235);
   padding-top: .4em;
 }
 
 mat-toolbar-row {
+  display: flex;
+  justify-content: space-around;
   height: 5em;
 }
 
@@ -13,10 +21,30 @@ mat-toolbar-row {
   height: 4.5em;
 }
 
-@media (max-width:500px) {
+.icons {
+  height: 1.4em;
+  margin-right: 1em;
+}
+
+@media (max-width:400px) {
   .logo>img {
     padding: .05em;
     height: 2.5em;
+  }
+
+  .spacer {
+    display: none;
+  }
+
+  mat-toolbar-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .icons {
+    margin: auto;
+    height: .9em;
+
   }
 }
 
@@ -29,5 +57,5 @@ mat-toolbar-row {
 /* Styles for the menu buttons and submenu */
 button {
   font-size: 1em;
-  padding: .4em;
+  padding: .3em;
 }

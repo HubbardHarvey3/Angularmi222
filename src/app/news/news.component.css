@@ -2,12 +2,53 @@
   flex-direction: column;
 }
 
-button {
-  width: 15em;
+div {
+  flex-direction: column;
 }
 
-@media (max-width:500px) {
+button {
+  margin: auto;
+  margin-top: 15px;
+}
+
+hr {
+  text-align: center;
+}
+
+.contentTitle {
+  font-size: 1.3em;
+  text-align: center;
+  padding: 0;
+  font-weight: 0;
+}
+
+/* Container Styling */
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.subcontainer {
+  width: 42%;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.images {
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width:750px) {
   button {
     width: 9em;
+  }
+
+  .subcontainer {
+    width: 100%;
+    margin: 1em;
   }
 }

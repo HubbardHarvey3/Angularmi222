@@ -1,20 +1,38 @@
 <app-menu></app-menu>
-<mat-card>
-  <mat-card-title>Our Latest Prayer Letters</mat-card-title>
-  <mat-card-content>(Prayer Letter PDF Link here)</mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-title>Pictures from the field</mat-card-title>
-  <mat-card-content>(Pictures here of the ministry)</mat-card-content>
-</mat-card>
-<mat-card>
-  <mat-card-title>Do you what to get involved</mat-card-title>
-  <mat-card-subtitle>Planning a mission trip?</mat-card-subtitle>
-  <mat-card-content>(Info on how to plan a trip here)</mat-card-content>
-  <mat-card-subtitle>Or you can support us financially</mat-card-subtitle>
-  <mat-card-content><button mat-raised-button routerLink="/donate">Donate</button></mat-card-content>
-</mat-card>
-<!-- <mat-card>
+<div>
+  <mat-card>
+    <div class="container">
+      <div class="subcontainer">
+        <mat-card-title>Latest Prayer Letters</mat-card-title>
+        <mat-card-content>(Prayer Letter PDF Link here)</mat-card-content>
+      </div>
+
+
+
+      <div class="subcontainer">
+        <mat-card-title>How to get involved</mat-card-title>
+        <mat-card-title class="contentTitle">Planning a mission trip?</mat-card-title>
+        <mat-card-content>(Info on how to plan a trip here)...Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Etiam porta ex sodales massa consectetur molestie. Proin nec leo condimentum, tristique massa id, vulputate
+          eros. Ut in enim sapien. Praesent ultricies dolor eu risus tempor, eu sagittis sapien auctor. Sed eleifend
+          ultrices diam, et vestibulum orci congue vel. Integer et urna egestas, sodales dui vel, luctus metus. Nunc ut
+          porta enim. Ut a congue quam, eu aliquet augue. Sed in dignissim nulla. Nunc pulvinar risus eu sodales
+          finibus. Donec sit amet mollis magna.</mat-card-content>
+        <mat-card-title class="contentTitle">Or you can support us financially</mat-card-title>
+        <button mat-raised-button routerLink="/donate">Donate </button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="subcontainer images">
+        <mat-card-title>Pictures from the field</mat-card-title>
+        <mat-card-content>(Pictures here of the ministry)</mat-card-content>
+      </div>
+    </div>
+  </mat-card>
+  <!-- <hr> -->
+
+  <!-- The below content will be utlized when the blog and auth is up and running -->
+  <!-- <mat-card>
    <div class="inputDiv">
     <mat-form-field>
       <mat-label>Blog Title</mat-label>
@@ -27,13 +45,16 @@
     <button mat-raised-button color='primary' (click)="submitBlogEntry()">Submit</button>
   </div> 
 </mat-card> -->
-<mat-card>
-  <mat-card-title>Latest Blogs!</mat-card-title>
-</mat-card>
+
+
+  <!-- <mat-card>
+    <mat-card-title>Latest Blogs!</mat-card-title>
+  </mat-card>
+</div>
 <div *ngFor="let item of blogs">
   <mat-card>
     <mat-card-title>{{item.blogTitle}}</mat-card-title>
     <mat-card-content>{{item.blogContent}}</mat-card-content>
   </mat-card>
 
-</div>
+</div> -->

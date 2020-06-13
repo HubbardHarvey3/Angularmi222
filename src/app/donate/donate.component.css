@@ -1,8 +1,45 @@
 .subtitle {
   font-size: 1.4em;
+  text-align: center;
+
 }
 
-mat-card-title {
-  padding-top: 1em;
-  padding-bottom: 1.4em;
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.subcontainer {
+  width: 33%;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.paypal {
+  flex-direction: column;
+  text-align: center;
+}
+
+.paypaldiv {
+  flex-grow: 2;
+}
+
+@media(max-width:800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subcontainer {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .paypal {
+    text-align: start;
+  }
 }

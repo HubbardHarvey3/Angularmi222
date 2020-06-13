@@ -30,4 +30,22 @@ mat-card {
 
 mat-card-title {
   padding: .3em;
+  padding-top: .6em;
+  padding-bottom: .4em;
+}
+
+
+hr {
+  display: flex;
+  margin: 16px 0 10px 0;
+  border: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+hr:before {
+  content: "\2022 \2022 \2022";
+  font-size: 50px;
+  color: #87ceeb;
+
 }

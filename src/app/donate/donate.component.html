@@ -1,27 +1,50 @@
 <app-menu></app-menu>
 <mat-card>
-  <mat-card-title class="pageTitle">Donate</mat-card-title>
-  <mat-card-title class="subtitle">All Donations are used to support the ministry of 222 Commission</mat-card-title>
+  <mat-card-title class="pageTitle">Support</mat-card-title>
+  <mat-card-title class="subtitle"><i>All Donations are used to support the ministry of 222 Commission</i>
+  </mat-card-title>
+  <div class="container">
+    <div class='subcontainer'>
+      <mat-card-title>Prayer</mat-card-title>
+      <mat-card-content>
+        You can pray for us...(Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta ex sodales massa
+        consectetur molestie. Proin nec leo condimentum, tristique massa id, vulputate eros. Ut in enim sapien. Praesent
+        ultricies dolor eu risus tempor, eu sagittis sapien auctor. Sed eleifend ultrices diam, et vestibulum orci
+        congue vel. Integer et urna egestas, sodales dui vel, luctus metus. Nunc ut porta enim. Ut a congue quam, eu
+        aliquet augue. Sed in dignissim nulla. Nunc pulvinar risus eu sodales finibus. Donec sit amet mollis magna.)
+      </mat-card-content>
+    </div>
 
-  <mat-card-title>Donate through BMFP</mat-card-title>
-  <mat-card-content>
-    You can donate through Baptist Missions to Forgotten People (BMPF), our mission-board. <br><br> <a
-      href="http://www.bmfp.org/index.php/giving" target="_blank">
-      Donate through BMFP</a>
-  </mat-card-content>
+    <div class='subcontainer'>
+      <mat-card-title>Donate through BMFP</mat-card-title>
+      <mat-card-content>
+        You can donate through Baptist Missions to Forgotten People (BMPF), our mission-board. (Your content
+        here.......Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta ex sodales massa consectetur
+        molestie.
+        Proin nec leo condimentum, tristique massa id, vulputate eros. Ut in enim sapien. Praesent ultricies dolor eu
+        risus tempor, eu sagittis sapien auctor. Sed eleifend ultrices diam, et vestibulum orci congue vel. Integer et
+        urna egestas, sodales dui vel, luctus metus. Nunc ut porta enim. Ut a congue quam, eu aliquet augue. Sed in
+        dignissim nulla. Nunc pulvinar risus eu sodales finibus. Donec sit amet mollis magna.)<br><br> <a
+          href="http://www.bmfp.org/index.php/giving" target="_blank">
+          Donate through BMFP</a>
+      </mat-card-content>
+    </div>
 
-  <mat-card-title>Donate through PayPal</mat-card-title>
-  <mat-card-content>
-    You can also donate through Paypal<br><br>
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-      <input type="hidden" name="cmd" value="_donations" />
-      <input type="hidden" name="business" value="abba_padre.ministries@yahoo.com" />
-      <input type="hidden" name="item_name" value="Donation to support the ministry of 222 Commission" />
-      <input type="hidden" name="currency_code" value="USD" />
-      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit"
-        title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-      <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-    </form>
-  </mat-card-content>
 
+    <div class='subcontainer paypaldiv'>
+      <mat-card-title class="paypal">Donate through PayPal</mat-card-title>
+      <mat-card-content class="paypal">
+        You can also donate through Paypal (Your content here) <br> <br>
+        <form class="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_donations" />
+          <input type="hidden" name="business" value="abba_padre.ministries@yahoo.com" />
+          <input type="hidden" name="item_name" value="Donation to support the ministry of 222 Commission" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0"
+            name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+          <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </mat-card-content>
+    </div>
+  </div>
 </mat-card>

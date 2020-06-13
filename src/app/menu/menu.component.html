@@ -1,40 +1,40 @@
 <mat-toolbar>
-  <mat-toolbar-row>
-    <span>
+  <div>
+    <mat-toolbar-row>
+      <span>
 
-      <button mat-raised-button [matMenuTriggerFor]='menu'>Menu</button>
-      <div id="menuDiv">
+        <button mat-raised-button [matMenuTriggerFor]='menu'>Menu</button>
+        <div id="menuDiv">
 
-        <mat-menu #menu="matMenu" xPosition="before">
-          <mat-list style="width: 100%;">
-            <mat-list-item style="width: 100%;">
-              <button mat-flat-button routerLink="/home">Home</button>
-            </mat-list-item>
-            <mat-list-item>
-              <button mat-flat-button routerLink="/news">News</button>
-            </mat-list-item>
-            <mat-list-item>
-              <button mat-flat-button routerLink="/about">About</button>
-            </mat-list-item>
-            <mat-list-item>
-              <button mat-flat-button routerLink="/statement-faith">Statement of Faith</button>
-            </mat-list-item>
-            <mat-list-item>
-              <button mat-flat-button routerLink="/donate">Donate</button>
-            </mat-list-item>
-          </mat-list>
-        </mat-menu>
-      </div>
-    </span>
-    <span class="spacer"></span>
-    <a href="https://www.facebook.com/2to2two2too" target="_blank"><img style="height: 1.4em; margin-right: 1em;"
-        src="../assets/f_logo_RGB-White_58.png" alt="Facebook Logo with Link"></a>
-    <a href="https://www.youtube.com/channel/UCwqWfk-PWEOa4I4WuLgFn4A" target="_blank"><img
-        style="height: 1.4em; margin-right: 1em;" src="../assets/yt_icon_mono_dark.png"
-        alt="Youtube Logo with Link"></a>
-    <a class="logo" routerLink="/"><img src="../assets/222CommissionEspSmall.png"
-        alt="Logo for 222 Commission Ministry with Link to home page"></a>
-  </mat-toolbar-row>
-
+          <mat-menu #menu="matMenu" xPosition="before">
+            <mat-list style="width: 100%;">
+              <mat-list-item style="width: 100%;">
+                <button mat-flat-button routerLink="/home">Home</button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-flat-button routerLink="/news">News</button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-flat-button routerLink="/about">About</button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-flat-button routerLink="/statement-faith">Statement of Faith</button>
+              </mat-list-item>
+              <mat-list-item>
+                <button mat-flat-button routerLink="/donate">Donate</button>
+              </mat-list-item>
+            </mat-list>
+          </mat-menu>
+        </div>
+      </span>
+      <span class="spacer"></span>
+      <a href="https://www.facebook.com/2to2two2too" target="_blank"><img class="icons"
+          src="../assets/f_logo_RGB-White_58.png" alt="Facebook Logo with Link"></a>
+      <a href="https://www.youtube.com/channel/UCwqWfk-PWEOa4I4WuLgFn4A" target="_blank"><img class="icons"
+          src="../assets/yt_icon_mono_dark.png" alt="Youtube Logo with Link"></a>
+      <a class="logo" routerLink="/"><img src="../assets/222CommissionEspSmall.png"
+          alt="Logo for 222 Commission Ministry with Link to home page"></a>
+    </mat-toolbar-row>
+  </div>
 </mat-toolbar>
 <router-outlet></router-outlet>

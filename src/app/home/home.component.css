@@ -1,12 +1,18 @@
+body {
+  overflow: hidden;
+
+}
+
 div {
   flex-direction: column;
+  overflow: hidden;
   margin-top: 1rem;
 }
 
-h1 {
-  font-weight: bold;
+mat-card-title {
+
   margin: 1em;
-  font-size: 3.2em;
+  font-size: 3.5em;
   line-height: 1.1em;
 }
 
@@ -17,8 +23,14 @@ h1 {
   align-items: center;
 }
 
+mat-card-title {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
 #verse {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.1em;
   padding: 1em;
 
@@ -36,8 +48,8 @@ img {
     line-height: 1.4em;
   }
 
-  h1 {
-    font-size: 1.2em;
+  mat-card-title {
+    font-size: 1.5em;
     line-height: 1.4em;
   }
 

@@ -3,5 +3,11 @@
 }
 
 button {
-  width: 40%;
+  width: 15em;
+}
+
+@media (max-width:500px) {
+  button {
+    width: 9em;
+  }
 }

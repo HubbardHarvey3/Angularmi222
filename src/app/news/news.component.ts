@@ -19,6 +19,9 @@ export class NewsComponent implements OnInit {
     this.blogs.unshift({ 'blogTitle': this.blogTitle, 'blogContent': this.blogContent })
     console.log('*********************')
     console.log(this.blogs)
+    this.svc.updateJson(this.blogs)
+    this.blogTitle = "";
+    this.blogContent = ""
   }
 
   ngOnInit(): void {

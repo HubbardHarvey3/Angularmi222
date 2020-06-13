@@ -14,10 +14,8 @@
   <mat-card-subtitle>Or you can support us financially</mat-card-subtitle>
   <mat-card-content><button mat-raised-button routerLink="/donate">Donate</button></mat-card-content>
 </mat-card>
-
-<mat-card>
-  <mat-card-title>Latest Blog!</mat-card-title>
-  <div class="inputDiv">
+<!-- <mat-card>
+   <div class="inputDiv">
     <mat-form-field>
       <mat-label>Blog Title</mat-label>
       <input [(ngModel)]="blogTitle" matInput>
@@ -27,11 +25,15 @@
       <textarea [(ngModel)]="blogContent" name="" id="" cols="30" rows="10" matInput></textarea>
     </mat-form-field>
     <button mat-raised-button color='primary' (click)="submitBlogEntry()">Submit</button>
-  </div>
+  </div> 
+</mat-card> -->
+<mat-card>
+  <mat-card-title>Latest Blogs!</mat-card-title>
 </mat-card>
 <div *ngFor="let item of blogs">
   <mat-card>
     <mat-card-title>{{item.blogTitle}}</mat-card-title>
     <mat-card-content>{{item.blogContent}}</mat-card-content>
   </mat-card>
+
 </div>
